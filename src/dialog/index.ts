@@ -5,7 +5,7 @@ interface IProps {
   confirmed?: (data?: any) => void;
 }
 
-interface type  {
+interface Res  {
   visible: boolean;
   onClose: (data?: any) => void;
   onConfirm: (data?: any) => void;
@@ -46,5 +46,5 @@ export const useDialog = (props: IProps) => {
     onConfirm,
     open,
     close
-  } as type
+  } as Res
 }
